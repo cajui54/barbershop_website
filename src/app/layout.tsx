@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import "./globals.css";
+import "./globals.scss";
 import { Montserrat, Cabin } from "next/font/google";
 export const metadata: Metadata = {
   title: "Destak Barbershop / Login",
