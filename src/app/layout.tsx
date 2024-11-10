@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
-import "./globals.scss";
+import "./globals.css";
 import { Montserrat, Cabin } from "next/font/google";
+
 export const metadata: Metadata = {
   title: "Destak Barbershop / Login",
   description: "Gerenciador de uma barbearia",
