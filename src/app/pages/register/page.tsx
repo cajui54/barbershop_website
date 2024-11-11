@@ -1,21 +1,32 @@
-import { MdEmail } from "react-icons/md";
-import { RiLockPasswordFill } from "react-icons/ri";
-
-import styles from "./page.module.scss";
 import Link from "next/link";
-import LogoComponet from "@/components/logo";
-export default function Home() {
+import React from "react";
+import { RiLockPasswordFill } from "react-icons/ri";
+import styles from "../../page.module.scss";
+import { TbArrowBack } from "react-icons/tb";
+import { MdEmail } from "react-icons/md";
+import { FaCloudUploadAlt } from "react-icons/fa";
+import { FaRegCircleUser } from "react-icons/fa6";
+const RegisterPage = () => {
   const test = false;
   return (
     <main className={styles.mainLogin}>
       <div className={styles.containerForm}>
         <form action="">
-          <LogoComponet />
           <fieldset>
-            <legend>Login</legend>
-            <p className="text-info">Faça o login para marcar horário:</p>
+            <legend>Cadastrar-se</legend>
+            <p className="text-info">Preencha os campos abaixo:</p>
 
             <div className={styles.containerInput}>
+              <div>
+                <label>
+                  <span>nome:</span>
+                  <FaRegCircleUser />
+
+                  <input type="text" placeholder="Lucas dos Santo Silva" />
+                  <span>*</span>
+                </label>
+                {test && <p>Campo email é obrigatório!</p>}
+              </div>
               <div>
                 <label>
                   <span>email:</span>
@@ -37,8 +48,17 @@ export default function Home() {
               </div>
             </div>
 
+            <div className={styles.containerInputFile}>
+              <label>
+                <FaCloudUploadAlt />
+
+                <span>Escolha uma imagem</span>
+                <input type="file" />
+              </label>
+            </div>
+
             <div className={styles.containerButtons}>
-              <button>Entrar</button>
+              <button>Confirmar</button>
               <button>Cancelar</button>
             </div>
 
@@ -76,15 +96,18 @@ export default function Home() {
                     />
                   </g>
                 </svg>
-                <span>Login com Gmail</span>
+                <span>Registrar-se com Gmail</span>
               </Link>
             </div>
           </fieldset>
         </form>
         <Link className={styles.link} href="pages/register">
-          Cadastre-se aqui...
+          <TbArrowBack />
+          voltar
         </Link>
       </div>
     </main>
   );
-}
+};
+
+export default RegisterPage;
