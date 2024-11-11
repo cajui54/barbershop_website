@@ -1,0 +1,22 @@
+.main {
+  margin: 2rem;
+}
+.main h2 {
+  font-size: 3rem;
+  font-family: var(--font-cabin);
+  color: var(--color-yellow);
+  letter-spacing: 0.5rem;
+}
+.main h3 {
+  color: var(--color-white);
+  font-size: 1.5rem;
+  transform: scaleX(1.2);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  letter-spacing: 0.2rem;
+  margin-top: -0.8rem;
+}
+.main span {
+  color: #888484;
+  font-size: medium;
+  font-family: Arial, Helvetica, sans-serif;
+}

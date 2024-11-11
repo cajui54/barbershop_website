@@ -1,0 +1,136 @@
+.mainLogin {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.containerForm {
+  background-color: #081215;
+  width: 30rem;
+  min-height: 45rem;
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+.containerForm form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.containerForm form fieldset {
+  border: none;
+}
+.containerForm form legend {
+  color: var(--color-white);
+
+  font-size: 2.5rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.containerInput {
+  margin-top: 2rem;
+}
+.containerInput div {
+  margin: 1.5rem;
+}
+.containerInput label {
+  position: relative;
+}
+.containerInput svg {
+  color: var(--color-yellow);
+  font-size: 1.2rem;
+  position: absolute;
+  top: -0.1rem;
+  left: 1.5rem;
+}
+.containerInput label span:nth-child(1) {
+  position: absolute;
+  left: 1.7rem;
+  bottom: 1.7rem;
+  color: var(--color-white);
+  font-size: 1.2rem;
+  font-family: var(--font-cabin);
+}
+
+.containerInput label span:nth-child(4) {
+  position: absolute;
+  color: var(--color-white);
+  font-size: 1.2rem;
+}
+.containerInput input {
+  background-color: var(--dark-color);
+  border: none;
+  color: var(--color-white);
+  width: 18rem;
+  padding: 1.8rem 2rem;
+  margin: 0 1rem;
+  border: 1px solid var(--color-white);
+  border-radius: 0.5rem;
+  font-size: 1.5rem;
+  letter-spacing: 0.1rem;
+  outline: none;
+}
+.containerInput input:focus {
+  background-color: var(--main-color);
+  border: 1px solid var(--color-yellow);
+}
+.containerInput p {
+  color: #ff0000;
+  letter-spacing: 0.1rem;
+  margin: 0.5rem 1rem;
+  font-size: 0.9rem;
+}
+.containerButtons {
+  width: 75%;
+  margin: 2rem auto;
+}
+.containerButtons button {
+  margin: 0.5rem 0;
+  width: 100%;
+  padding: 0.5rem 0;
+  border-radius: 1rem;
+  font-weight: bold;
+  font-family: var(--font-cabin);
+  transition: all 0.5s ease-in-out;
+}
+.containerButtons button:nth-child(1) {
+  background-color: #fcd34d;
+  color: var(--dark-color);
+}
+.containerButtons button:nth-child(1):hover {
+  background-color: var(--color-yellow);
+}
+.containerButtons button:nth-child(2) {
+  background-color: var(--main-color);
+  color: #fff;
+}
+.containerButtons button:nth-child(2):hover {
+  background-color: var(--dark-color);
+}
+.containerSVG {
+  width: 70%;
+  margin: 0 auto;
+}
+.containerSVG a {
+  display: flex;
+  align-items: center;
+
+  text-decoration: none;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  color: var(--color-white);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.containerSVG a svg {
+  font-size: 1.5rem;
+  margin-right: 0.5rem;
+}
+.link {
+  display: block;
+  margin-top: 3rem;
+  font-size: 1.5rem;
+  text-align: center;
+  color: var(--color-yellow);
+  font-family: var(--font-cabin);
+}
